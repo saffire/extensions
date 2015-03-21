@@ -1,6 +1,8 @@
 PROJECT(exif)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -ggdb  -O0 -D__DEBUG")
+
 # Add include directory so include files are found
 include_directories(../../include)
 

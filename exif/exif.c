@@ -120,10 +120,6 @@ static void obj_destroy(t_object *obj) {
     smm_free(obj);
 }
 
-static char *obj_debug(t_object *obj) {
-    return "exif";
-}
-
 
 // Exif object management functions
 t_object_funcs exif_funcs = {
@@ -171,7 +167,7 @@ static t_object *_objects[] = {
 };
 
 t_module _saffire_module = {
-    "::noxlogic::exif",
+    "::exif",
     "Exif module",
     _objects,
     _obj_exif_init,
